@@ -1,4 +1,4 @@
-module https://gitlab.imt-atlantique.fr/login-nuage/tp-dockerfile
+module gitlab.imt-atlantique.fr/login-nuage/tp-dockerfile
 
 require (
 	github.com/gorilla/context v1.1.1
