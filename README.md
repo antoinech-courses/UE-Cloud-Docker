@@ -33,7 +33,7 @@ TIPs: you need to expose ports in the Dockerfile and then you need to map the in
 
 TIPs: you need to declare a volume in the Dockerfile but also to match the volume with the host filesystem when running the container! See the `-v` option of `docker run`
 
-## Write a Dockerfile with a multisatge build
+## Write a Dockerfile with a multistage build
 
 - name the base image as `builder`
 - to build a static binary when compiling a Go program `CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .`
