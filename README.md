@@ -6,7 +6,7 @@ Even if not being an expert in Go you should be able to understand that the serv
 
 The `handler` function simply get a name from the http request and print `Received request for name`. The message is returned and printed either in the prompt or in a `log` file.
 
-The environment `LOG_FILE_VARIABLE` is indicate which log file to use if any.
+The environment `LOG_FILE_LOCATION` is indicate which log file to use if any.
 
 To send a request to the service when deployed in a Docker container, you can simply do a `curl http://localhost:port\?name\=test` or use your internet browser directly, or Postman.
 
