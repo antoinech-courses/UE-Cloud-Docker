@@ -2,13 +2,13 @@ FROM golang:alpine as builder
 
 WORKDIR /app
 
-ENV LOG_FILE_LOCATION=/logs/app.log
-
 COPY . .
 
 RUN go build -o main .
 
 FROM scratch
+
+ENV LOG_FILE_LOCATION=/logs/app.log
 
 COPY --from=builder /app/main /app/main
 
