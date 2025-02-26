@@ -16,7 +16,7 @@ To send a request to the service when deployed in a Docker container, you can si
 - write the Dockerfile
 	- choose the appropriate Docker image for Go
 	- create a working directory
-	- copy what is needed inside the container
+	- copy what is needed inside the image
 	- compile the Go file
 	- expose the port of the application
 	- start the application
